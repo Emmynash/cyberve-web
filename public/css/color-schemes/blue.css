@@ -1,0 +1,60 @@
+/* Color */
+.about .in-text, 
+.about .a-box i,
+.count:hover .c-box i, 
+.count:hover .c-box h4, 
+.count:hover .c-box .factor,
+.features i,
+.testimonials .item h4,
+.contact h4,
+.footer .btn:hover,
+.pricing .btn:hover,
+.header-section .slider-form .btn:hover,
+.header-section .left-part a.btn:hover,
+.f-logo,
+.tweet_text a, 
+.tweet_user .username a,
+.twitter-feed .fa-twitter,
+.top-navbar ul.nav a:hover, 
+.top-navbar ul.nav li.active a, 
+.top-navbar ul.nav a:focus,
+.header-section a.btn:hover,
+.team-box h4,
+.blog a, .blog .post-details a:hover, .blog .post-details i:hover{
+	color:#0184cc;
+}
+/* Background Color */
+.left-part button.btn,
+.twitter-feed .owl-theme .owl-controls .owl-page.active span,
+.testimonials .owl-page.active span,
+.pricing .price,
+.pricing .btn,
+#screenshots .owl-theme .owl-controls .owl-page.active span, #screenshots .owl-theme .owl-controls.clickable .owl-page:hover span,
+.footer .btn,
+.team li i:hover,
+.header-section .left-part a.btn,
+.header-section .slider-form .btn,
+.special-feature .mask-bottom,
+.blog-item .owl-theme .owl-controls .owl-page.active span{
+	background-color:#0184cc;
+}
+
+/* Border Color */
+.count .box-center,
+.footer .btn:hover,
+.pricing .btn:hover,
+.header-section .slider-form .btn:hover,
+.special-feature .s-feature-box,
+.team li i:hover,
+.header-section .left-part .btn,
+.team-box:hover img,
+.mail-chimp .form-control,
+.pricing .price,
+.pricing .pricing-border,
+.pricing .pricing-border2{
+	border-color:#0184cc;
+}
+/* Backgroud Opacity */
+.pattern-bg{
+	background-color : rgba(1, 134, 204, 0.6);
+}

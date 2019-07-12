@@ -1,0 +1,144 @@
+/* ================================= Responsive CSS ================================= */
+/* ---------- MAX 991PX ---------- */
+@media only screen and (max-width:991px) {	
+	/* Logo */
+	.site-logo a{
+		margin:0px;
+	}
+	/* Menu */
+	.nav > li > a{
+		padding:10px;
+	}
+	/* Header Slider */
+	.header-image{
+		height:auto !important;
+	}
+	.slider-inner{
+		margin:140px 0px 100px;
+	}
+	.header-section .slider-form{
+		margin:50px 0px 60px;
+	}
+	.header-section .left-part p{
+		padding-right:0px;
+	}
+	/* Testimonials */
+	.testimonials .item-img img{
+		float:none;
+		text-align:center;
+		margin:0 auto 15px;
+	}
+	.testimonials .item, .testimonials h4, .testimonials h5{
+		text-align:center !important;
+	}
+	.testimonials p{
+		text-align:justify;
+		padding:0px 20px;
+	}
+	/* Contact */
+	.contact .b-box1, .contact .b-box3{
+		padding:0 15px;
+	}
+	/* Footer */
+	.footer .input-text .form-control, .footer .input-email .form-control{
+		float:none;
+		text-align:center;
+		margin:0 auto 10px;
+		display:block;
+		width:100%;
+	}
+	.footer .form-group{
+		margin:0 0px 20px;
+	}
+	 .footer .input-email .btn{
+	 	margin:20px auto;
+		text-align:center;
+		display:block;
+		width:50%;
+	}
+	/* Video bg */
+	.header-section .slider-form{
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+/* ---------- MAX 768PX ---------- */
+@media only screen and (max-width:768px) {
+	/* Header Slider */
+	.header-section h1{
+		font-size:45px;
+	}
+}
+/* ---------- MAX 767px ---------- */
+@media only screen and (max-width: 767px){
+	/* Header Section */ 
+	.top-navbar ul.nav a{
+		text-align:left;
+		border-bottom:1px solid #626262;
+		padding:10px 0px;
+	}
+	.top-navbar .navbar-collapse {
+    	max-height: 250px;
+		padding:0px;
+		margin:-1px;
+	}	
+	.navbar-nav {
+    	margin: 13.5px 10px;
+	}
+	.sticky-wrapper.is-sticky .top-container{
+		padding:0px;
+	}
+	.navbar-collapse{
+		background:#000000;
+	}
+	/* Features */
+	.features .no-margin, .team .team-box{
+		margin-bottom:45px !important;
+	}
+	/* Pricing */
+	.pricing .box1, .pricing .box3, .pricing .box2{
+		width:100%;
+		margin-bottom:60px;
+	}
+	.pricing .box2{
+		margin-top:20px;
+	}
+	/* Blog */
+	.blog .blog-item{
+		margin-bottom:50px;
+	}
+	/* Copyright */
+	.copyright .copy-text p, .copyright .copy-social ul{
+		float:none;
+	}	
+	/* Mail Chimp */
+	
+	.mail-chimp .form-group,.mail-chimp .form-control{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.header-section.mail-chimp .left-part .btn{
+		width: 50%;
+	}
+}
+/* ---------- MAX 640PX ---------- */
+@media only screen and (max-width:640px) {
+	/* Header Slider */
+	.header-section h1{
+		font-size:35px;
+		line-height:40px;
+	}
+	
+}
+/* ---------- MAX 360PX ---------- */
+@media only screen and (max-width:360px) {
+	/* Header Slider */
+	.header-section .slider-form{
+		margin-top:40px;
+		padding:0 35px 20px;
+	}
+	/* Special Features */
+	.special-feature .s-feature-box{
+		height:270px;
+	}
+}
