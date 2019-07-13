@@ -11,64 +11,64 @@ $(window).load(function() {
 Ready Function
 -------------------------------------------- */
 $(document).ready(function($) {
-	'use strict';					   
-	/* --------------------------------------------
-	Animation 
-	-------------------------------------------- */
-	$(function() {
-		$('.animated').appear(function() {
-			var elem = $(this);
-			var animation = elem.data('animation');
-			if (!elem.hasClass('visible')) {
-				var animationDelay = elem.data('animation-delay');
-				if (animationDelay) {
-					setTimeout(function() {
-						elem.addClass(animation + " visible");
-					}, animationDelay);
-				} else {
-					elem.addClass(animation + " visible");
-				}
-			}
-		});
-	});
-	
-	/* --------------------------------------------
-	Scroll Navigation
-	-------------------------------------------- */
-	$(document).on('click', '.scroll', function(event) {
-		var $anchor = $(this);
-		var headerH = $('#navigation').outerHeight();
-		$('html, body').stop().animate({
-			scrollTop: $($anchor.attr('href')).offset().top + 2 + "px"
-		}, 1200, 'easeInOutExpo');
-		event.preventDefault();
-	});
-	
-	/* --------------------------------------------
-	Menus hide after click --  mobile devices
-	-------------------------------------------- */
-	$(document).on('click', '.nav li a', function() {
-		$('.navbar-collapse').removeClass('in');
-	});
-	
-	/* --------------------------------------------
-	Active Navigation
-	-------------------------------------------- */
-	$(function() {
-		$('body').scrollspy({
-			target: '#topnav',
-			offset: 95
-		});
-	});
-	
-	/* --------------------------------------------
-	Fixed Menu on Scroll
-	-------------------------------------------- */
-	$(function() {
-		$("#sticky-section").sticky({
-			topSpacing: 0
-		});
-	});
+    'use strict';
+    /* --------------------------------------------
+    Animation 
+    -------------------------------------------- */
+    $(function() {
+        $('.animated').appear(function() {
+            var elem = $(this);
+            var animation = elem.data('animation');
+            if (!elem.hasClass('visible')) {
+                var animationDelay = elem.data('animation-delay');
+                if (animationDelay) {
+                    setTimeout(function() {
+                        elem.addClass(animation + " visible");
+                    }, animationDelay);
+                } else {
+                    elem.addClass(animation + " visible");
+                }
+            }
+        });
+    });
+
+    /* --------------------------------------------
+    Scroll Navigation
+    -------------------------------------------- */
+    $(document).on('click', '.scroll', function(event) {
+        var $anchor = $(this);
+        var headerH = $('#navigation').outerHeight();
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top + 2 + "px"
+        }, 1200, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+    /* --------------------------------------------
+    Menus hide after click --  mobile devices
+    -------------------------------------------- */
+    $(document).on('click', '.nav li a', function() {
+        $('.navbar-collapse').removeClass('in');
+    });
+
+    /* --------------------------------------------
+    Active Navigation
+    -------------------------------------------- */
+    $(function() {
+        $('body').scrollspy({
+            target: '#topnav',
+            offset: 95
+        });
+    });
+
+    /* --------------------------------------------
+    Fixed Menu on Scroll
+    -------------------------------------------- */
+    $(function() {
+        $("#sticky-section").sticky({
+            topSpacing: 0
+        });
+    });
 
     /* --------------------------------------------
 	Client
@@ -86,7 +86,7 @@ $(document).ready(function($) {
             itemsCustom: false,
             itemsDesktop: [1199, 1],
             itemsDesktopSmall: [979, 1],
-            itemsTablet: [768, 1],          
+            itemsTablet: [768, 1],
             itemsTabletSmall: false,
             itemsMobile: [479, 1]
         });
@@ -101,12 +101,12 @@ $(document).ready(function($) {
             itemsCustom: false,
             itemsDesktop: [1199, 3],
             itemsDesktopSmall: [979, 3],
-            itemsTablet: [768, 2],           
+            itemsTablet: [768, 2],
             itemsTabletSmall: false,
             itemsMobile: [479, 1]
         });
     });
-	
+
     /* --------------------------------------------
 	Pattern Slider
 	-------------------------------------------- */
@@ -117,24 +117,24 @@ $(document).ready(function($) {
         singleItem: true,
         transitionStyle: "fade"
     });
-	
-	/* --------------------------------------------
-	Blog Slider
-	-------------------------------------------- */
+
+    /* --------------------------------------------
+    Blog Slider
+    -------------------------------------------- */
     $(function() {
         $("#owl-example4").owlCarousel({
             items: 1,
             itemsCustom: false,
-			slideSpeed: 100,
+            slideSpeed: 100,
             itemsDesktop: [1199, 1],
             itemsDesktopSmall: [979, 1],
-            itemsTablet: [768, 1],          
+            itemsTablet: [768, 1],
             itemsTabletSmall: false,
             itemsMobile: [479, 1],
-			navigation: false
+            navigation: false
         });
     });
-	
+
     /*--------------------------------------------
 	Contact Form
 	-------------------------------------------- */
@@ -302,46 +302,46 @@ $(document).ready(function($) {
 	Google Map
 	------------------------------------------------- */
     $(function() {
-		function initialize() {
-			var myLatlng = new google.maps.LatLng(44.5403, -78.5463);
-			var mapOptions = {
-				zoom: 8,
-				disableDefaultUI: true,
-				scrollwheel: false,
-				draggable: false,
-				center: myLatlng
-			};
-			var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-			var contentString = '<div id="map-content">' +
-				'<p>Office Names</p>' +
-				'<div> Street Name,</div>' +
-				'<div> City Name, State,</div>' +
-				'<div>Country - xxxxx </div>'
-			'</div>';
-			var infowindow = new google.maps.InfoWindow({
-				content: contentString
-			});
-			var marker = new google.maps.Marker({
-				position: map.getCenter(),
-				icon: {
-					path: google.maps.SymbolPath.CIRCLE,
-					scale: 10
-				},
-				map: map
-			});
-			google.maps.event.addListener(marker, 'click', function() {
-				infowindow.open(map, marker);
-			});
-		}
-            google.maps.event.addDomListener(window, 'load', initialize);
-	})
-	
+        function initialize() {
+            var myLatlng = new google.maps.LatLng(44.5403, -78.5463);
+            var mapOptions = {
+                zoom: 8,
+                disableDefaultUI: true,
+                scrollwheel: false,
+                draggable: false,
+                center: myLatlng
+            };
+            var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+            var contentString = '<div id="map-content">' +
+                '<p>Office Names</p>' +
+                '<div> Street Name,</div>' +
+                '<div> City Name, State,</div>' +
+                '<div>Country - xxxxx </div>'
+            '</div>';
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+            var marker = new google.maps.Marker({
+                position: map.getCenter(),
+                icon: {
+                    path: google.maps.SymbolPath.CIRCLE,
+                    scale: 10
+                },
+                map: map
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.open(map, marker);
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    })
+
     /* --------------------------------------------
 	Typed Js
 	-------------------------------------------- */
     $(function() {
         $(".type_text").typed({
-            strings: ["present your App.", "describe App."],
+            strings: ["not an option.", "drives us."],
             typeSpeed: 230,
             backDelay: 500,
             loop: true
