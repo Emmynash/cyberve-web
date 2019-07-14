@@ -1,0 +1,81 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("../fonts/flaticon.eot");
+	src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../fonts/flaticon.woff") format("woff"),
+	url("../fonts/flaticon.ttf") format("truetype"),
+	url("../fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family:Flaticon;        
+	font-style:normal;
+}
+.flaticon-ascending24:before {
+	content: "\e000";
+}
+.flaticon-building71:before {
+	content: "\e001";
+}
+.flaticon-call10:before {
+	content: "\e002";
+}
+.flaticon-chat55:before {
+	content: "\e003";
+}
+.flaticon-circular8:before {
+	content: "\e004";
+}
+.flaticon-download14:before {
+	content: "\e005";
+}
+.flaticon-dribbble14:before {
+	content: "\e006";
+}
+.flaticon-facebook54:before {
+	content: "\e007";
+}
+.flaticon-fantasy2:before {
+	content: "\e008";
+}
+.flaticon-files5:before {
+	content: "\e009";
+}
+.flaticon-heart296:before {
+	content: "\e00a";
+}
+.flaticon-laptop44:before {
+	content: "\e00b";
+}
+.flaticon-layers4:before {
+	content: "\e00c";
+}
+.flaticon-lifesaver9:before {
+	content: "\e00d";
+}
+.flaticon-light61:before {
+	content: "\e00e";
+}
+.flaticon-new:before {
+	content: "\e00f";
+}
+.flaticon-paintbrush9:before {
+	content: "\e010";
+}
+.flaticon-paperplane:before {
+	content: "\e011";
+}
+.flaticon-paw2:before {
+	content: "\e012";
+}
+.flaticon-pinterest31:before {
+	content: "\e013";
+}
+.flaticon-tachometer:before {
+	content: "\e014";
+}
+.flaticon-twitter32:before {
+	content: "\e015";
+}
