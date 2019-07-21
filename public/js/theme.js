@@ -303,7 +303,7 @@ $(document).ready(function($) {
 	------------------------------------------------- */
     $(function() {
         function initialize() {
-            var myLatlng = new google.maps.LatLng(44.5403, -78.5463);
+            var myLatlng = new google.maps.LatLng(9.8195691, 8.8617188);
             var mapOptions = {
                 zoom: 8,
                 disableDefaultUI: true,
@@ -313,10 +313,10 @@ $(document).ready(function($) {
             };
             var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
             var contentString = '<div id="map-content">' +
-                '<p>Office Names</p>' +
-                '<div> Street Name,</div>' +
-                '<div> City Name, State,</div>' +
-                '<div>Country - xxxxx </div>'
+                '<p>Cyberve Technologies</p>' +
+                '<div> Bukuru Lowcost,</div>' +
+                '<div> Jos South, Plateau State,</div>' +
+                '<div>Nigeria - 930281 </div>'
             '</div>';
             var infowindow = new google.maps.InfoWindow({
                 content: contentString

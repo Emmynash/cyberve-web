@@ -575,6 +575,13 @@ i:hover,
 }
 
 
+/*-------------------------------Animated Gif----------------------------*/
+
+.animated-gif {
+    background-size: cover;
+}
+
+
 /* ------------------------------- COUNT ------------------------------- */
 
 .count {
@@ -1101,7 +1108,7 @@ i:hover,
 /* ---------------------------- VIDEO ---------------------------- */
 
 .video {
-    background: url(../images/bg/text-slider-bg.jpg) no-repeat;
+    background: url(../images/bg/slider2.jpg) no-repeat;
     background-size: cover;
     max-width: 100%;
     background-attachment: fixed;
